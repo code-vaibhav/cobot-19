@@ -1,0 +1,117 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    
+<!-- hello section -->
+    
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            <random>
+                <li>Hello User</li>
+                <li>Hi! nice to meet you</li>
+                <li>Hello i am bot</li>
+                <li>Hi!</li>
+                <li>Hello! glad to meet you</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>HELLO *</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    
+<!-- number of patients section -->
+
+    <!-- active cases -->
+    
+    <category>
+        <pattern>NUMBER OF ACTIVE CASES IN *</pattern>
+        <template>
+            <random>
+                <li>Active cases in <star/> is 28788</li>
+                <li>Active cases in <star/> is 76433</li>
+                <li>Active cases in <star/> is 2343</li>
+                <li>Active cases in <star/> is 98454</li>
+                <li>Active cases in <star/> is 7635</li>
+                <li>Active cases in <star/> is 2090</li>
+                <li>Active cases in <star/> is 87872</li>
+                <li>Active cases in <star/> is 25451</li>
+                <li>Active cases in <star/> is 18912</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>HOW MANY ACTIVE CASES IN *</pattern>
+        <template>NUMBER OF ACTIVE CASES IN <star/></template>
+    </category>
+    <category>
+        <pattern>CAN YOU TELL ME ACTIVE CASES IN *</pattern>
+        <template>NUMBER OF ACTIVE CASES IN <star/></template>
+    </category>
+    <category>
+        <pattern>TELL ME THE PATIENTS IN *</pattern>
+        <template>NUMBER OF ACTIVE CASES IN <star/></template>
+    </category>
+        
+    <!-- patients  -->
+    
+    <category>
+        <pattern>NUMBER OF PATIENTS IN *</pattern>
+        <template>
+            <random>
+                <li>patients in <star/> is 20003</li>
+                <li>patients in <star/> is 30002</li>
+                <li>patients in <star/> is 200000</li>
+                <li>patients in <star/> is 347637</li>
+                <li>patients in <star/> is 23482</li>
+                <li>patients in <star/> is 73837</li>
+                <li>patients in <star/> is 8372837</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>TELL ME PATIENTS IN *</pattern>
+        <template><srai>NUMBER OF PATIENTS IN <star/></srai></template>
+    </category>
+    <category>
+        <pattern>HOW MANY PATIENTS IN *</pattern>
+        <template><srai>NUMBER OF PATIENTS IN <star/></srai></template>
+    </category>
+
+<!-- symptoms section -->
+    
+    <category>
+        <pattern>WHAT ARE THE SYMPTOMS OF CORONAVIRUS</pattern>
+        <template>The symptoms of corona virus are</template>
+    </category>
+    <category>
+        <pattern>SYMPTOMS OF CORONAVIRUS *</pattern>
+        <template><srai>WHAT ARE THE SYMPTOMS OF CORONAVIRUS</srai></template>
+    </category>
+    <category>
+        <pattern>_ SYMPTOMS OF CORONAVIRUS</pattern>
+        <template><srai>WHAT ARE THE SYMPTOMS OF CORONAVIRUS</srai></template>
+    </category>
+    <category>
+        <pattern>_ SYMPTOMS OF CORONAVIRUS *</pattern>
+        <template><srai>WHAT ARE THE SYMPTOMS OF CORONAVIRUS</srai></template>
+    </category>
+
+<!-- bye section  -->
+    
+    <category>
+        <pattern>BYE</pattern>
+        <template>
+            <random>
+                <li>Good bye</li>
+                <li>Bye</li>
+                <li>Bye take care</li>
+                <li>Bye! we will talk again</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>BYE *</pattern>
+        <template><srai>BYE</srai></template>
+    </category>
+    
+</aiml>

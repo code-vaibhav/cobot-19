@@ -1,0 +1,16 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <category>
+        <pattern>LOAD AIML B</pattern>
+        <template>
+            <learn>basic_chat.xml</learn>
+        </template>
+    </category>
+    <category>
+        <pattern>LOAD AIML C</pattern>
+        <template>
+            <learn>covid_chat.xml</learn>
+        </template>
+    </category>
+
+</aiml>
